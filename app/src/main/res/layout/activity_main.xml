@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jpalcantara.quizapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <!-- First Question -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 1: Book is to Reading as Fork is to:"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="16dp"
+            android:textSize="15sp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drawing"
+                android:id="@+id/radioDrawing"
+                android:onClick="onRadioButtonClicked1"
+                android:layout_marginLeft="16dp"
+                android:textSize="14sp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Writing"
+                android:id="@+id/radioWriting"
+                android:onClick="onRadioButtonClicked1"
+                android:layout_marginLeft="16dp"
+                android:textSize="14sp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stirring"
+                android:id="@+id/radioStirring"
+                android:onClick="onRadioButtonClicked1"
+                android:layout_marginLeft="16dp"
+                android:textSize="14sp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eating"
+                android:id="@+id/radioEating"
+                android:onClick="onRadioButtonClicked1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="14sp"/>
+        </RadioGroup>
+
+
+        <!-- Second Question -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 2: Which country occupied the Philippines during World War II?"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Country"
+            android:id="@+id/editTextCountry"
+            android:inputType="text"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="14sp"/>
+
+
+        <!-- Third Question -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 3: Which of the four sports below did Bo Johnson played in? (Multiple answers)"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="15sp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Baseball"
+            android:onClick="onCheckBoxSelected"
+            android:id="@+id/checkBoxBaseball"
+            android:layout_marginLeft="16dp"
+            android:textSize="14sp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Basketball"
+            android:onClick="onCheckBoxSelected"
+            android:id="@+id/checkBoxBasketball"
+            android:layout_marginLeft="16dp"
+            android:textSize="14sp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Football"
+            android:onClick="onCheckBoxSelected"
+            android:id="@+id/checkBoxFootball"
+            android:layout_marginLeft="16dp"
+            android:textSize="14sp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Track &amp; Field"
+            android:onClick="onCheckBoxSelected"
+            android:id="@+id/checkBoxTrackField"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="14sp"/>
+
+
+        <!-- Fourth Question -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 4: What is the first number to contain the letter 'a'?"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number"
+            android:id="@+id/editTextNumber"
+            android:inputType="number"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="14sp"/>
+
+
+        <!-- Fifth Question -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 5: True or False. Valentine's day is banned in Saudi Arabia?"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textSize="15sp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="True"
+                android:id="@+id/radioTrue"
+                android:onClick="onRadioButtonClicked2"
+                android:layout_marginLeft="16dp"
+                android:textSize="14sp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="False"
+                android:id="@+id/radioFalse"
+                android:onClick="onRadioButtonClicked2"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="14sp"/>
+        </RadioGroup>
+
+        <!-- Submit Answers-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Answers"
+            android:onClick="onSubmitAnswersClicked"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+</ScrollView>
